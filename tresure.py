@@ -2,7 +2,7 @@ import random
 import time
 import os
 
-def main():
+def urmom():
   encounters=["crocodile","gecko moria","enel","rob lucci"]
   sencounters=["shanks","kaido","mihawk","blackbeard"]
   level=1
@@ -18,27 +18,27 @@ def main():
   time.sleep(1.5)
   os.system("clear")
   print("there will be random encounters which you will either clear or run from.")
-  time.sleep(2)
+  time.sleep(3)
   os.system("clear")
   print("the goal of this game is to get as much gold as you can before the end.")
-  time.sleep(1)
-  print("you will start with a ship and you will sail the sea.")
   time.sleep(2)
+  print("you will start with a ship and you will sail the sea.")
+  time.sleep(3)
   os.system("clear")
   choice = input("you have found 2 crew members, zoro and nami. Which would you like to choose to pick up for your crew?")
-  if choice==zoro:
+  if choice=="zoro":
     members.remove("zoro")
     print("you unlocked'zoro' and leveled up!")
   else:
     members.remove("nami")
-  print("you unlocked 'nami' and leveled up!")
-  time.sleep(0.25)
+    print("you unlocked 'nami' and leveled up!")
+  time.sleep(2)
   print("you are curently level 2")
-  time.sleep(1)
+  time.sleep(1.5)
   level=level+1
   os.system("clear")
   adventure=input("You find a kindom called alabasta, and you enter. While in The city, you find a quest giver that offer's a quest for gold and to save the kingdom. Do you accept or decline?")
-  if adventure==accept:
+  if adventure=="accept":
     print("you go up to an evil tyrant who has been causing problems named crocodile.")
     time.sleep(1)
     print("crocadile says that to stop him, you will have to fight him.")
@@ -48,7 +48,8 @@ def main():
     gold=gold+100
     level=level+1
     members.remove("robin")
-    time.sleep(3)
+    time.sleep(5)
+    os.system("clear")
     print("you gained: 1 level, 100 gold, and 1 crew member.")
     time.sleep(1)
     os.system("clear")
@@ -123,4 +124,4 @@ def main():
 
 
 
-main()
+urmom()
