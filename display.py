@@ -13,10 +13,12 @@ plt.close()
 
 """
 
+"""
 # another solution, arguably better, to show nami image
 nami = cv2.imread("nami.png")
 cv2.imshow('nami', nami)
 cv2.waitKey(3000) # show for 3 seconds
+"""
 
 """
 We might want to import this .py file and use the below function
@@ -31,25 +33,26 @@ show_img(".png", 3)
 """
 
 """
-We might make a similar function for Luffy movie 
+# We might make a similar function for Luffy movie 
 
-# shows Luffy movie
-start = time.time()
-cap = cv2.VideoCapture("LuffyvsKatakuri.mp4")
-while (cap.isOpened()):
-    ret, frame = cap.read()
-    if ret:
-        cv2.imshow('frame', frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+def show_mov(path, time):
+    # shows Luffy movie
+    start = time.time()
+    cap = cv2.VideoCapture(path)
+    while (cap.isOpened()):
+        ret, frame = cap.read()
+        if ret:
+            cv2.imshow('frame', frame)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+        else:
             break
-    else:
-        break
 
-    end = time.time()
-    if end - start > 7: # show for 7 seconds
-        break 
+        end = time.time()
+        if end - start > time: # show for time seconds
+            break 
 
-cap.release()
-cv2.destroyAllWindows()
+    cap.release()
+    cv2.destroyAllWindows()
 
 """
