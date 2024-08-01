@@ -1,6 +1,7 @@
 import random
 import time
 import os
+from display import show_img
 
 def urmom():
   encounters=["crocodile","gecko moria","enel","rob lucci"]
@@ -28,12 +29,12 @@ def urmom():
   choice = input("you have found 2 crew members, zoro and nami. Which would you like to choose to pick up for your crew?")
   if choice=="zoro":
     members.remove("zoro")
-    print("you unlocked'zoro' and leveled up!")
+    print("You unlocked'zoro' and leveled up!")
   else:
     members.remove("nami")
-    print("you unlocked 'nami' and leveled up!")
+    print("You unlocked 'nami' and leveled up!")
   time.sleep(2)
-  print("you are curently level 2")
+  print("you are currently level 2")
   time.sleep(1.5)
   level=level+1
   os.system("clear")
