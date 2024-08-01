@@ -26,6 +26,8 @@ def show_img(img_path, time):
     cv2.imshow('image', cv2.imread(img_path))
     cv2.waitKey(time * 1000)
 
+show_img(".png", 3)
+
 """
 
 """
