@@ -20,19 +20,13 @@ cv2.imshow('nami', nami)
 cv2.waitKey(3000) # show for 3 seconds
 """
 
-"""
-We might want to import this .py file and use the below function
-The import statement for this function is "from display import show_img"
+#We might want to import this .py file and use the below function
+#The import statement for this function is "from display import show_img"
 
 def show_img(img_path, time):
     cv2.imshow('image', cv2.imread(img_path))
     cv2.waitKey(time * 1000)
 
-show_img(".png", 3)
-
-"""
-
-"""
 # We might make a similar function for Luffy movie 
 
 def show_mov(path, time):
@@ -54,5 +48,3 @@ def show_mov(path, time):
 
     cap.release()
     cv2.destroyAllWindows()
-
-"""
